@@ -1,0 +1,28 @@
+{
+  "name": "typescript-express-crud",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/njabuloskosana/cleanarchitecture-nodejs-typescript.git",
+  "author": "Njabulo Skosana <49289663+njabuloskosana@users.noreply.github.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc",
+    "dev": "nodemon ./build/index.js",
+    "start-dev": "tsc && yarn dev"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/node": "^20.10.4",
+    "nodemon": "^3.0.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "pg": "^8.11.3",
+    "reflect-metadata": "^0.1.14",
+    "sequelize": "^6.35.1",
+    "sequelize-typescript": "^2.1.6"
+  }
+}
