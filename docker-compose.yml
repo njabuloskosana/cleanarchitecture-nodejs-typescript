@@ -1,0 +1,15 @@
+version: "3"
+services:
+  postgres:
+    image: postgres:16.0
+    container_name: lavo-api
+    environment:
+      POSTGRES_DB: lavodb
+      POSTGRES_USER: lavo
+      POSTGRES_PASSWORD: lavo
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+volumes:
+  postgres-data:
